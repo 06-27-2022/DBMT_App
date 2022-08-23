@@ -2,15 +2,12 @@ package com.garden.service;
 
 import java.util.List;
 
-import javax.persistence.Entity;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.garden.model.restaurantModel;
 import com.garden.repository.restaurantRepository;
 
-// @Entity
 @Service("restaurantService")
 public class restaurantService {
 	
@@ -22,9 +19,9 @@ public class restaurantService {
 	}
 	
 	
-	public List<restaurantModel> findAllRestaurants() {
+	public List<restaurantModel> findAll() {
 		
-		return this.restaurantRepo.findAllRestaurants();
+		return this.restaurantRepo.findAll();
 	}
 	
 	public restaurantModel save(restaurantModel restaurant) {
@@ -32,33 +29,33 @@ public class restaurantService {
 		return this.restaurantRepo.save(restaurant);
 	}
 	
-	public void deleteById(int id) {
-		
-		this.restaurantRepo.deleteById(id);;
-	}
-	
-	public restaurantModel findById(int id) {
-		
-		return this.restaurantRepo.findById(id);
-	}
-
-	public restaurantModel insertFood(int food) {
-		
-		return this.restaurantRepo.insertFood(food);
-	}
-	
-	public restaurantModel openQueue() {
-		
-		return this.restaurantRepo.openQueue();
-	}
-	
-	public restaurantModel closeQueue() {
-		
-		return this.restaurantRepo.closeQueue();
-	}
-	
-	public restaurantModel sendInvitation() {
-		
-		return this.restaurantRepo.sendInvitation();
-	}
+//	public void deleteById(int id) {
+//		
+//		this.restaurantRepo.deleteById(id);;
+//	}
+//	
+//	public restaurantModel findById(int id) {
+//		
+//		return this.restaurantRepo.findById(id);
+//	}
+//
+//	public restaurantModel insertFood(int food) {
+//		
+//		return this.restaurantRepo.insertFood(food);
+//	}
+//	
+//	public restaurantModel openQueue() {
+//		
+//		return this.restaurantRepo.openQueue();
+//	}
+//	
+//	public restaurantModel closeQueue() {
+//		
+//		return this.restaurantRepo.closeQueue();
+//	}
+//	
+//	public restaurantModel sendInvitation() {
+//		
+//		return this.restaurantRepo.sendInvitation();
+//	}
 }

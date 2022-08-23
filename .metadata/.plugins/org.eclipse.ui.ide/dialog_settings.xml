@@ -45,4 +45,12 @@
 			<item value="/Users/bj.brassard/Documents/Project_2/DBMT_App/DBMT_AbundantGardens"/>
 		</list>
 	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="199"/>
+		<item key="DIALOG_Y_ORIGIN" value="198"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
 </section>
