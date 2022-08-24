@@ -1,5 +1,8 @@
 package com.garden.controller;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.garden.model.hhModel;
 import com.garden.service.hhService;
 
@@ -24,12 +27,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController("hhController")
 @RequestMapping(path = "/hh")
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class hhController {
 
 	@Autowired
 	private hhService hhService;
 	
-	@GetMapping(path = "/allhh")
+	@GetMapping(path = "/allhh", produces = MediaType.APPLICATION_JSON_VALUE)
 	//@RequestMapping(path = "/allhh", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<hhModel> findAll() {
 		

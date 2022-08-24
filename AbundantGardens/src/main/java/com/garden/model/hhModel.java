@@ -11,6 +11,9 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+
 // import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import lombok.AllArgsConstructor;
@@ -24,6 +27,7 @@ import lombok.NoArgsConstructor;
 @Entity
 
 @Table(name = "households")
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class hhModel {
 
 	@Id

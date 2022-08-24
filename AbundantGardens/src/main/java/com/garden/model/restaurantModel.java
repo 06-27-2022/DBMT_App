@@ -10,6 +10,9 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +24,7 @@ import lombok.NoArgsConstructor;
 @Entity
 
 @Table(name = "restaurants")
-
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class restaurantModel {
 	
 	@Id

@@ -16,11 +16,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 import com.garden.model.restaurantModel;
 import com.garden.service.restaurantService;
 
 @RestController("restaurantController")
 @RequestMapping(path = "/restaurant")
+@JsonAutoDetect(fieldVisibility = Visibility.ANY)
 public class restaurantController {
 	
 	@Autowired
