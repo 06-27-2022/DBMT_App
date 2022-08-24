@@ -21,8 +21,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-// @RestController("hhController")
-// @Entity
 @Controller(value = "hhController")
 @RequestMapping(path = "/hh")
 public class hhController {
@@ -31,9 +29,9 @@ public class hhController {
 	private hhService hhService;
 	
 	@GetMapping(path = "/allhh")
-	public List<hhModel> findAllhh() {
+	public List<hhModel> findAll() {
 		
-		return this.hhService.findAllhh();
+		return this.hhService.findAll();
 	}
 	
 //	@GetMapping(path = "/{casenum}", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -53,10 +51,10 @@ public class hhController {
 //
 //		return this.hhService.findByStatus(status);
 //	}
-//	
+	
 //	@GetMapping(path = "/id", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public hhModel findById(@RequestParam int id) {
+//	public List<hhModel> findById(@RequestParam int id) {
 //		
-//		return this.hhService.findById(id);
+//		return this.hhService.findAllById(id);
 //	}
 }

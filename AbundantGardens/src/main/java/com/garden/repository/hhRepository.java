@@ -13,6 +13,8 @@ public interface hhRepository extends JpaRepository<hhModel, Integer>{
 	
 	<S extends hhModel>  S save(S entity);
 	
+	// List<hhModel> findAllById(int id);
+	
 //	hhModel manageInvitation();
 //	
 //	hhModel pickupMeal();
@@ -24,8 +26,4 @@ public interface hhRepository extends JpaRepository<hhModel, Integer>{
 //	
 //	@Query(value = "select h from households h where h.status = ?1")
 //	List<hhModel> findByStatus(String status);
-//	
-//	@Query(value = "select h from households h where h.hhId = ?1")
-//	hhModel findById(int id);
-
 }

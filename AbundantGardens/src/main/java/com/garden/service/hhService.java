@@ -19,20 +19,26 @@ public class hhService {
 		
 	}
 
-	public List<hhModel> findAllhh() {
+	public List<hhModel> findAll() {
 		
 		return this.hhRepo.findAll();
 	}
 	
-//	public hhModel findByCaseNum(String casenum) {
-//		
-//		return this.hhRepo.findByCaseNum(casenum);
-//	}
-//	
 	public void save(hhModel household) {
 		
 		this.hhRepo.save(household);
 	}
+	
+//	public List<hhModel> findAllById(int id) {
+//		
+//		return this.hhRepo.findAllById(id);
+//	}
+	
+//	public hhModel findByCaseNum(String casenum) {
+//	
+//	return this.hhRepo.findByCaseNum(casenum);
+//}
+//
 	
 //	public hhModel manageInvitation() {
 //		
