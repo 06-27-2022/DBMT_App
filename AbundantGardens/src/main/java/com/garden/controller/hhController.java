@@ -18,10 +18,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller(value = "hhController")
+@RestController("hhController")
 @RequestMapping(path = "/hh")
 public class hhController {
 
@@ -29,6 +30,7 @@ public class hhController {
 	private hhService hhService;
 	
 	@GetMapping(path = "/allhh")
+	//@RequestMapping(path = "/allhh", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<hhModel> findAll() {
 		
 		return this.hhService.findAll();

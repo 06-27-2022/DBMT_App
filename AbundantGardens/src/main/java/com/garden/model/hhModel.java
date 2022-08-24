@@ -24,24 +24,24 @@ import lombok.NoArgsConstructor;
 @Entity
 
 @Table(name = "households")
-// @EntityListeners(AuditingEntityListener.class)
-public class hhModel /* implements Serializable */{
+public class hhModel {
 
 	@Id
-	@Column(name = "hhId")
+	@Column(name = "hh_id")
 	
 	@GeneratedValue(generator = "hh_id_seq", strategy = GenerationType.AUTO)
 	@SequenceGenerator(allocationSize = 1, name = "hh_id_seq")
 	private int hhid;
-    @Column(name = "caseNum")
-    private String casenum;
-    @Column(name = "caseName")
+    @Column(name = "case_name")
     private String casename;
-    @Column(name = "casePassword")
+    @Column(name = "case_num")
+    private String casenum;
+    @Column(name = "case_password")
     private String casepassword;
-    @Column(name = "status")
-    private String status;
     @Column(name = "penalties")
     private String penalities;
+    @Column(name = "status")
+    private String status;
+
     
 } // hhModel()

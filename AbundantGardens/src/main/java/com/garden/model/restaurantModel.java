@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 
 @Table(name = "restaurants")
 
-public class restaurantModel /* implements Serializable */{
+public class restaurantModel {
 	
 	@Id
 	@Column(name = "restId")

@@ -19,9 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.garden.model.restaurantModel;
 import com.garden.service.restaurantService;
 
-// @RestController("restaurantController")
-// @Entity
-@Controller(value = "restaurantController")
+@RestController("restaurantController")
 @RequestMapping(path = "/restaurant")
 public class restaurantController {
 	
