@@ -29,25 +29,28 @@ public class restaurantController {
 	@Autowired
 	private restaurantService restServ;
 	
-	@GetMapping(path = "/allrestaurants")
+	@GetMapping(path = "/all")
 	public List<restaurantModel> findAll() {
 		
 		return this.restServ.findAll();
 	}
 	
-//	@GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public ResponseEntity<restaurantModel> findById(@PathVariable int id) {
-//		
-//		return new ResponseEntity<restaurantModel>(this.restServ.findById(id), HttpStatus.OK);
-//	}
+//	@GetMapping(path = "/{restName}", produces = MediaType.APPLICATION_JSON_VALUE)
+//	public List<restaurantModel> findByRestName(@PathVariable String restName) {
 //	
+//		return this.restServ.findByRestName(restName);
+//	}
+	
+	
+//	@GetMapping(path = "/{restName}", produces = MediaType.APPLICATION_JSON_VALUE)
+//	public ResponseEntity<restaurantModel> findByRestName(@PathVariable String restName) {
+//		
+//		return new ResponseEntity<restaurantModel>(this.restServ.findByRestName(restName), HttpStatus.OK);
+//	}
+	
+
 	@PostMapping(path = "/save", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void save(@RequestBody restaurantModel restaurant) {
 		this.restServ.save(restaurant);
 	}
-//	
-//	@GetMapping(path = "/deleter/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public void delete(@PathVariable int id) {
-//		this.restServ.deleteById(id);
-//	}
 }

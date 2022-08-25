@@ -32,15 +32,17 @@ public class restaurantModel {
 	
 	@GeneratedValue(generator = "restaurant_id_seq", strategy = GenerationType.AUTO)
 	@SequenceGenerator(allocationSize = 1, name = "restaurant_id_seq")
-	private int restId;
+	private int restid;
 	@Column(name = "restName")
-	private String restName;
+	private String restname;
 	@Column(name = "catergory")
 	private String catergory;
 	@Column(name = "address")
 	private String address;
 	@Column(name = "contact")
 	private String contact;
+	@Column(name = "rating")
+	private String rating;
 	
 
 } // restaurantModel()

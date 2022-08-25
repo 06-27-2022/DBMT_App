@@ -13,19 +13,6 @@ public interface restaurantRepository extends JpaRepository<restaurantModel, Int
 	
 	<S extends restaurantModel> S save(restaurantModel restaurant);
 	
-//	@Query("delete r from restaurants r where r.restId = ?1")
-//	void deleteById(int id);
-//	
-//	@Query("select r from restaurants r where r.restId = ?1")
-//	restaurantModel findById(int id);
-//	
-//	restaurantModel insertFood(int food);
-//	
-//	restaurantModel openQueue();
-//	
-//	restaurantModel closeQueue();
-//	
-//	restaurantModel sendInvitation();
-	
-
+//	@Query("select r from restaurants r where r.restName = ?1")
+//	List<restaurantModel> findByRestName(String restname);
 }

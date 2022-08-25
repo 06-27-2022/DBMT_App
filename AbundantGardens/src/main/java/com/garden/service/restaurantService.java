@@ -29,33 +29,9 @@ public class restaurantService {
 		return this.restaurantRepo.save(restaurant);
 	}
 	
-//	public void deleteById(int id) {
+//	public List<restaurantModel> findByRestName(String restName) {
 //		
-//		this.restaurantRepo.deleteById(id);;
+//		return this.restaurantRepo.findByRestName(restName);
 //	}
-//	
-//	public restaurantModel findById(int id) {
-//		
-//		return this.restaurantRepo.findById(id);
-//	}
-//
-//	public restaurantModel insertFood(int food) {
-//		
-//		return this.restaurantRepo.insertFood(food);
-//	}
-//	
-//	public restaurantModel openQueue() {
-//		
-//		return this.restaurantRepo.openQueue();
-//	}
-//	
-//	public restaurantModel closeQueue() {
-//		
-//		return this.restaurantRepo.closeQueue();
-//	}
-//	
-//	public restaurantModel sendInvitation() {
-//		
-//		return this.restaurantRepo.sendInvitation();
-//	}
+
 }

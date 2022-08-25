@@ -39,28 +39,11 @@ public class hhController {
 		
 		return this.hhService.findAll();
 	}
-	
-//	@GetMapping(path = "/{casenum}", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public ResponseEntity<hhModel> findByCaseNum(@PathVariable String casenum) {
-//		
-//		return new ResponseEntity<hhModel>(this.hhService.findByCaseNum(casenum), HttpStatus.OK);
-//	}
-	
+
 	@PostMapping(path = "/savehh", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void save(@RequestBody hhModel household) {
 		
 		this.hhService.save(household);
 	}
 	
-//	@GetMapping(path = "/status/{status}", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public List<hhModel> findByStatus(@PathVariable String status) {
-//
-//		return this.hhService.findByStatus(status);
-//	}
-	
-//	@GetMapping(path = "/id", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public List<hhModel> findById(@RequestParam int id) {
-//		
-//		return this.hhService.findAllById(id);
-//	}
 }

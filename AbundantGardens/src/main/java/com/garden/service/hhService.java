@@ -33,35 +33,5 @@ public class hhService {
 //		
 //		return this.hhRepo.findAllById(id);
 //	}
-	
-//	public hhModel findByCaseNum(String casenum) {
-//	
-//	return this.hhRepo.findByCaseNum(casenum);
-//}
-//
-	
-//	public hhModel manageInvitation() {
-//		
-//		return this.hhRepo.manageInvitation();
-//	}
-//	
-//	public hhModel pickupMeal() {
-//		
-//		return this.hhRepo.pickupMeal();
-//	}
-//	
-//	public hhModel rateRestaurant() {
-//		
-//		return this.hhRepo.rateRestaurant();
-//	}
-//	
-//	public List<hhModel> findByStatus(String status) {
-//		
-//		return this.hhRepo.findByStatus(status);
-//	}
-//	
-//	public hhModel findById(int id) {
-//		
-//		return this.hhRepo.findById(id);
-//	}
+
 }
