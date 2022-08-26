@@ -18,7 +18,6 @@ public class restaurantService {
 		
 	}
 	
-	
 	public List<restaurantModel> findAll() {
 		
 		return this.restaurantRepo.findAll();
@@ -29,9 +28,9 @@ public class restaurantService {
 		return this.restaurantRepo.save(restaurant);
 	}
 	
-//	public List<restaurantModel> findByRestName(String restName) {
-//		
-//		return this.restaurantRepo.findByRestName(restName);
-//	}
+	public List<restaurantModel> findByRestCat(String category) {
+		
+		return this.restaurantRepo.findByRestCat(category);
+	}
 
 }

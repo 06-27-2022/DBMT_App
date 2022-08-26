@@ -13,6 +13,7 @@ public interface restaurantRepository extends JpaRepository<restaurantModel, Int
 	
 	<S extends restaurantModel> S save(restaurantModel restaurant);
 	
-//	@Query("select r from restaurants r where r.restName = ?1")
-//	List<restaurantModel> findByRestName(String restname);
+	@Query("select r from restaurantModel r where r.category = ?1")
+	List<restaurantModel> findByRestCat(String category);
+	
 }

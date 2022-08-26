@@ -35,17 +35,17 @@ public class restaurantController {
 		return this.restServ.findAll();
 	}
 	
-//	@GetMapping(path = "/{restName}", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public List<restaurantModel> findByRestName(@PathVariable String restName) {
-//	
-//		return this.restServ.findByRestName(restName);
-//	}
+	@GetMapping(path = "/{category}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<restaurantModel> findByRestCat(@PathVariable String category) {
+	
+		return this.restServ.findByRestCat(category);
+	}
 	
 	
 //	@GetMapping(path = "/{restName}", produces = MediaType.APPLICATION_JSON_VALUE)
-//	public ResponseEntity<restaurantModel> findByRestName(@PathVariable String restName) {
+//	public ResponseEntity<restaurantModel> findByRestname(@PathVariable String restname) {
 //		
-//		return new ResponseEntity<restaurantModel>(this.restServ.findByRestName(restName), HttpStatus.OK);
+//		return new ResponseEntity<restaurantModel>(this.restServ.findByRestName(restname), HttpStatus.OK);
 //	}
 	
 

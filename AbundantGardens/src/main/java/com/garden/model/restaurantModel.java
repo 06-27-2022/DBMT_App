@@ -28,15 +28,15 @@ import lombok.NoArgsConstructor;
 public class restaurantModel {
 	
 	@Id
-	@Column(name = "restId")
+	@Column(name = "restid")
 	
 	@GeneratedValue(generator = "restaurant_id_seq", strategy = GenerationType.AUTO)
 	@SequenceGenerator(allocationSize = 1, name = "restaurant_id_seq")
 	private int restid;
-	@Column(name = "restName")
+	@Column(name = "restname")
 	private String restname;
-	@Column(name = "catergory")
-	private String catergory;
+	@Column(name = "category")
+	private String category;
 	@Column(name = "address")
 	private String address;
 	@Column(name = "contact")
