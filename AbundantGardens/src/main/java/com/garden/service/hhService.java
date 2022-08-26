@@ -29,9 +29,9 @@ public class hhService {
 		this.hhRepo.save(household);
 	}
 	
-//	public List<hhModel> findAllById(int id) {
-//		
-//		return this.hhRepo.findAllById(id);
-//	}
+	public List<hhModel> findUsernameAndPassword(String casename, String casepassword) {
+		
+		return this.hhRepo.findUsernameAndPassword(casename, casepassword);
+	}
 
 }

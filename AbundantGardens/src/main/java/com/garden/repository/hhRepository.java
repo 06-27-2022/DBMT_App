@@ -13,6 +13,10 @@ public interface hhRepository extends JpaRepository<hhModel, Integer>{
 	
 	<S extends hhModel>  S save(S entity);
 	
-	// List<hhModel> findAllById(int id);
+	@Query("select h from hhModel h where h.casename = ?1 and h.casepassword = ?2")
+	List<hhModel> findUsernameAndPassword(String casename, String casepassword);
+	
+//	@Query("update h hhModel h set h.penalties = X h where h.id = ?1")
+//	List<hhModel> givePenalty(String penalty);
 
 }

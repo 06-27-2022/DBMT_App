@@ -33,17 +33,22 @@ public class hhController {
 	@Autowired
 	private hhService hhService;
 	
-	@GetMapping(path = "/allhh", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(path = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
 	//@RequestMapping(path = "/allhh", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<hhModel> findAll() {
 		
 		return this.hhService.findAll();
 	}
 
-	@PostMapping(path = "/savehh", consumes = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(path = "/save", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void save(@RequestBody hhModel household) {
 		
 		this.hhService.save(household);
 	}
 	
+	@GetMapping(path = "/{casename}&{casepassword}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<hhModel> findUsernameAndPassword(@PathVariable String casename, @PathVariable String casepassword) {
+		
+		return this.hhService.findUsernameAndPassword(casename, casepassword);
+	}
 }
