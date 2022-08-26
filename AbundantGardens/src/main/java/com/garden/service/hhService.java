@@ -29,9 +29,14 @@ public class hhService {
 		this.hhRepo.save(household);
 	}
 	
-	public List<hhModel> findUsernameAndPassword(String casename, String casepassword) {
+	public List<hhModel> findUsernameAndPassword(String casenum, String casepassword) {
 		
-		return this.hhRepo.findUsernameAndPassword(casename, casepassword);
+		return this.hhRepo.findUsernameAndPassword(casenum, casepassword);
+	}
+	
+	public List<hhModel> givePenalty(int id) {
+		
+		return this.hhRepo.givePenalty(id);
 	}
 
 }

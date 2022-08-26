@@ -46,9 +46,15 @@ public class hhController {
 		this.hhService.save(household);
 	}
 	
-	@GetMapping(path = "/{casename}&{casepassword}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public List<hhModel> findUsernameAndPassword(@PathVariable String casename, @PathVariable String casepassword) {
+	@GetMapping(path = "/{casenum}&{casepassword}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<hhModel> findUsernameAndPassword(@PathVariable String casenum, @PathVariable String casepassword) {
 		
-		return this.hhService.findUsernameAndPassword(casename, casepassword);
+		return this.hhService.findUsernameAndPassword(casenum, casepassword);
 	}
+	
+//	@PostMapping(path = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
+//	public List<hhModel> givePenalty(@PathVariable int id) {
+//		
+//		return this.hhService.givePenalty(id);
+//	}
 }
