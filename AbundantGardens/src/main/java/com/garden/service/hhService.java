@@ -34,9 +34,9 @@ public class hhService {
 		return this.hhRepo.findUsernameAndPassword(casenum, casepassword);
 	}
 	
-	public List<hhModel> givePenalty(int id) {
-		
-		return this.hhRepo.givePenalty(id);
-	}
+//	public List<hhModel> givePenalty(int id) {
+//		
+//		return this.hhRepo.givePenalty(id);
+//	}
 
 }

@@ -17,8 +17,8 @@ public interface hhRepository extends JpaRepository<hhModel, Integer>{
 	@Query("select h from hhModel h where h.casenum = ?1 and h.casepassword = ?2")
 	List<hhModel> findUsernameAndPassword(String casenum, String casepassword);
 	
-	@Modifying
-	@Query("update hhModel h set h.penalties = 'X' where h.hhid = ?1")
-	List<hhModel> givePenalty(int id);
+//	@Modifying
+//	@Query("update hhModel h set h.penalties = 'X' where h.hhid = ?1")
+//	List<hhModel> givePenalty(int id);
 
 }

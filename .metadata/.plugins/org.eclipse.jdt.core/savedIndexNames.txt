@@ -99,7 +99,6 @@ INDEX VERSION 1.131+/Users/bj.brassard/Documents/Project_2/DBMT_App/.metadata/.p
 3929889485.index
 1227316214.index
 3456131232.index
-1724557501.index
 2554769243.index
 1463437054.index
 3767257298.index
