@@ -19,17 +19,14 @@ The Live Well Partner Journey:
   - User reviews/ratings
     
 Core Functionalities:
-  - Ability to login as household or partner
-  - GPS locator
+  - Ability to login as household using the CalFresh Program
+  - Implemented map with points of interest of app partners
   - QR access code/tracker
   - Partner ability to open/close pickup windows and initiate "food queue"
-  - Ratings filter
-  - Options for delivery
-  - Add food banks
   - Restaurants can place themselves in a category when they sign up
       (Mexican cuisine, Asian Fusion, BBQ, TexMex, American cuisine, etc.) so that
       the households can input food preferences and be matched accordingly.
-  - Users are able to input allergies/food restrictions
+  - Restaurant filter by the category type
   - Users can leave a review that evaluates ease of pickup, satisfaction with food provided, and maybe even tips for other families picking up from this location
   -Mobile App component
 
